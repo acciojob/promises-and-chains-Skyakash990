@@ -8,7 +8,7 @@ let form=document.getElementById("voteForm");
 		let age=Number(ageval.value);
 		let name=nameval.value.trim();
 		if(age<=0 || name==="" || isNaN(age)){
-			alert("Please enter valid details.");
+			alert("Please enter valid details");
 			return;
 		}
 		new Promise((resolve,reject)=>{
