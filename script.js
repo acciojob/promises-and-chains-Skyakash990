@@ -14,11 +14,11 @@ let form=document.getElementById("voteForm");
 		new Promise((resolve,reject)=>{
 			if(age>=18){
 				setTimeout(()=>{
-					resolve("Welcome, . You can vote.");
+					resolve(`Welcome, ${name}. You can vote.`);
 				},4000);
 			}
 			else{
-				reject("Oh sorry . You aren't old enough.");
+				reject(`Oh sorry ${name}. You aren't old enough.`);
 			}
 		})
 		.then((res)=>{
